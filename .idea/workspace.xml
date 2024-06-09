@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -116,6 +121,7 @@
       <workItem from="1716278261412" duration="1858000" />
       <workItem from="1716280210122" duration="450000" />
       <workItem from="1716280673668" duration="1982000" />
+      <workItem from="1717955433160" duration="2427000" />
     </task>
     <servers />
   </component>
