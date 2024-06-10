@@ -27,9 +27,6 @@ public class RegistrationController {
                                @RequestParam("age") int age,
                                @RequestParam("mobile") String mobile,
                                @RequestParam("email") String email,
-                               @RequestParam("university") String university,
-                               @RequestParam("faculty") String faculty,
-                               @RequestParam("cv") String cv,
                                @RequestParam("login") String login,
                                @RequestParam("password") String password) {
 
@@ -39,9 +36,6 @@ public class RegistrationController {
         intern.setAge(age);
         intern.setMobile(mobile);
         intern.setEmail(email);
-        intern.setUniversity(university);
-        intern.setFaculty(faculty);
-        intern.setCv(cv);
         intern.setLogin(login);
         intern.setPassword(password);
 

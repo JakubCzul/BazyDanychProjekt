@@ -30,17 +30,15 @@ public class Intern {
     @Column(nullable = false)
     private String mobile;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String university;
 
-    @Column(nullable = false)
+    @Column(nullable = true)
     private String faculty;
 
-    @Column(nullable = false)
-    private String cv;
+    @Column(nullable = true)
+    private String cv = "Przykladowe";
 
-    @Column
-    private Long idPosts;
 
     // Getters and setters for all fields
     public Long getId() {
@@ -131,11 +129,5 @@ public class Intern {
         this.cv = cv;
     }
 
-    public Long getIdPosts() {
-        return idPosts;
-    }
 
-    public void setIdPosts(Long idPosts) {
-        this.idPosts = idPosts;
-    }
 }
