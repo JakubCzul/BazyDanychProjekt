@@ -24,11 +24,23 @@
 <section id="registration-form">
     <h2>Formularz rejestracyjny</h2>
     <form action="/registration" method="POST">
-        <label for="login">Login:</label>
-        <input type="text" id="login" name="login" required>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="age">Wiek:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="mobile">Telefon komórkowy:</label>
+        <input type="text" id="mobile" name="mobile" required>
 
         <label for="email">Adres e-mail:</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" required>
 
         <label for="password">Hasło:</label>
         <input type="password" id="password" name="password" required>
