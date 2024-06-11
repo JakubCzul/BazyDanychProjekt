@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import static com.Projekt.StronaStazowa.Hashing.Hashing.doHashing;
+
 @Controller
 @RequestMapping("/registration")
 public class RegistrationController {
@@ -37,7 +39,7 @@ public class RegistrationController {
         intern.setMobile(mobile);
         intern.setEmail(email);
         intern.setLogin(login);
-        intern.setPassword(password);
+        intern.setPassword(doHashing(password));
 
         internRepository.save(intern);
 
