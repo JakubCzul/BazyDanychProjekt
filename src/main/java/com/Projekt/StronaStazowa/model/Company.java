@@ -7,8 +7,8 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-@Table(name = "interns")
-public class Intern {
+@Table(name = "companies")
+public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,23 +24,4 @@ public class Intern {
 
     @Column(nullable = false)
     private String name;
-
-    @Column(nullable = false)
-    private String surname;
-
-    @Column(nullable = false)
-    private int age;
-
-    @Column(nullable = false)
-    private String mobile;
-
-    @Column(nullable = true)
-    private String university;
-
-    @Column(nullable = true)
-    private String faculty;
-
-    @Column(nullable = true)
-    private String cv = "Przykladowe";
-
 }
