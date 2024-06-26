@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="" />
+    <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +127,7 @@
       <workItem from="1718037681456" duration="4094000" />
       <workItem from="1718131878546" duration="2263000" />
       <workItem from="1719390054962" duration="16000" />
-      <workItem from="1719390294660" duration="45000" />
+      <workItem from="1719390294660" duration="2491000" />
     </task>
     <servers />
   </component>

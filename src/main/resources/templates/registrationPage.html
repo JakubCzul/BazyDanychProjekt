@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rejestracja</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <style>
+        .tab {
+            display: none;
+        }
+        .tab-content {
+            display: none;
+        }
+        #user:checked ~ #user-content,
+        #company:checked ~ #company-content {
+            display: block;
+        }
+        .tab-label {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        .tab-label:hover {
+            background-color: #0056b3;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 150px;
+        }
+        button {
+            display: block;
+            width: 21%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
@@ -22,31 +75,68 @@
 </header>
 
 <section id="registration-form">
-    <h2>Formularz rejestracyjny</h2>
-    <form action="/registration" method="POST">
-        <label for="name">Imię:</label>
-        <input type="text" id="name" name="name" required>
+    <input type="radio" id="user" name="tab" class="tab" checked><br>
+    <label for="user" class="tab-label">Użytkownik</label>
+    <input type="radio" id="company" name="tab" class="tab">
+    <label for="company" class="tab-label">Firma</label>
 
-        <label for="surname">Nazwisko:</label>
-        <input type="text" id="surname" name="surname" required>
+    <div id="user-content" class="tab-content">
+        <h2>Formularz rejestracyjny - Użytkownik</h2>
+        <form action="/registration/user" method="POST">
+            <div class="form-group">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Wiek:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Telefon komórkowy:</label>
+                <input type="text" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="UserEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="UserLogin" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="UserPassword" name="password" required>
+            </div>
+            <button type="submit">Zarejestruj się jako użytkownik</button>
+        </form>
+    </div>
 
-        <label for="age">Wiek:</label>
-        <input type="number" id="age" name="age" required>
-
-        <label for="mobile">Telefon komórkowy:</label>
-        <input type="text" id="mobile" name="mobile" required>
-
-        <label for="email">Adres e-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="login">Login:</label>
-        <input type="text" id="login" name="login" required>
-
-        <label for="password">Hasło:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Zarejestruj się</button>
-    </form>
+    <div id="company-content" class="tab-content">
+        <h2>Formularz rejestracyjny - Firma</h2>
+        <form action="/registration/company" method="POST">
+            <div class="form-group">
+                <label for="companyName">Nazwa firmy:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Zarejestruj się jako firma</button>
+        </form>
+    </div>
 </section>
 
 <footer>

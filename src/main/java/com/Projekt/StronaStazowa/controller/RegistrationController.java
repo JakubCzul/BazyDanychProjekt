@@ -1,7 +1,9 @@
 package com.Projekt.StronaStazowa.controller;
 
 import com.Projekt.StronaStazowa.model.Intern;
+import com.Projekt.StronaStazowa.model.Company;
 import com.Projekt.StronaStazowa.repository.InternRepository;
+import com.Projekt.StronaStazowa.repository.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,12 +20,15 @@ public class RegistrationController {
     @Autowired
     private InternRepository internRepository;
 
+    @Autowired
+    private CompanyRepository companyRepository;
+
     @GetMapping
     public String registrationPage() {
         return "registrationPage";
     }
 
-    @PostMapping
+    @PostMapping("/user")
     public String registerUser(@RequestParam("name") String name,
                                @RequestParam("surname") String surname,
                                @RequestParam("age") int age,
@@ -42,6 +47,23 @@ public class RegistrationController {
         intern.setPassword(doHashing(password));
 
         internRepository.save(intern);
+
+        return "redirect:/login";
+    }
+
+    @PostMapping("/company")
+    public String registerCompany(@RequestParam("companyName") String companyName,
+                                  @RequestParam("email") String email,
+                                  @RequestParam("login") String login,
+                                  @RequestParam("password") String password) {
+
+        Company company = new Company();
+        company.setName(companyName);
+        company.setEmail(email);
+        company.setLogin(login);
+        company.setPassword(doHashing(password));
+
+        companyRepository.save(company);
 
         return "redirect:/login";
     }
