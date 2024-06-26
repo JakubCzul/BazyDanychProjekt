@@ -62,7 +62,7 @@
     "Spring Boot.StronaStazowaApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kubac/Desktop/Projekt_Bazy",
+    "last_opened_file_path": "C:/Users/kubac/Documents/GitHub/Qt/Kolos/BazyDanychProjekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,6 +122,7 @@
       <workItem from="1718037681456" duration="4094000" />
       <workItem from="1718131878546" duration="2263000" />
       <workItem from="1719390054962" duration="16000" />
+      <workItem from="1719390294660" duration="45000" />
     </task>
     <servers />
   </component>
