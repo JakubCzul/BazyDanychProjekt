@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferty Staży</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Oferty Staży</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Strona główna</a></li>
+            <li><a href="/internshipPosts">Oferty staży</a></li>
+            <li><a href="/practicePosts">Oferty praktyk</a></li>
+            <li><a href="/registration">Zarejestruj się</a></li>
+            <li><a href="/login">Zaloguj się</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="internship-offers">
+    <h2>Dostępne oferty staży:</h2>
+
+    <ul>
+        <li th:each="post : ${posts}">
+            <h3 th:text="${post.title}">Post Title</h3>
+            <p th:text="${post.content}">Post Content</p>
+            <p><strong>Autor:</strong> <span th:text="${post.author}">Author Name</span></p>
+        </li>
+    </ul>
+
+    <h2>Dodaj nową ofertę stażu:</h2>
+    <form action="/internshipPosts/add" method="post">
+        <label for="title">Tytuł:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="content">Opis:</label>
+        <textarea id="content" name="content" required></textarea><br><br>
+
+        <button type="submit">Dodaj ofertę</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Platforma Staży i Praktyk</p>
+</footer>
+
+</body>
+</html>
