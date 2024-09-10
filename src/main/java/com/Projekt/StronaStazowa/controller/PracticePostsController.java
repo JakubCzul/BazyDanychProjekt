@@ -20,6 +20,10 @@ public class PracticePostsController {
     @Autowired
     private PracticePostRepository practicePostRepository;
 
+    public PracticePostsController(PracticePostRepository practicePostRepository) {
+        this.practicePostRepository = practicePostRepository;
+    }
+
     @GetMapping
     public String getPracticePosts(Model model) {
         List<PracticePost> posts = practicePostRepository.findAll();

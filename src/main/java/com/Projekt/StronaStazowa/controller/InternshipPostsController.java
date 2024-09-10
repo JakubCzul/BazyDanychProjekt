@@ -20,6 +20,10 @@ public class InternshipPostsController {
     @Autowired
     private InternshipPostRepository internshipPostRepository;
 
+    InternshipPostsController(InternshipPostRepository internshipPostRepository){
+        this.internshipPostRepository = internshipPostRepository;
+    }
+
     @GetMapping
     public String getInternshipPosts(Model model) {
         List<InternshipPost> posts = internshipPostRepository.findAll();

@@ -23,6 +23,11 @@ public class RegistrationController {
     @Autowired
     private CompanyRepository companyRepository;
 
+    public RegistrationController(InternRepository internRepository, CompanyRepository companyRepository) {
+        this.internRepository = internRepository;
+        this.companyRepository = companyRepository;
+    }
+
     @GetMapping
     public String registrationPage() {
         return "registrationPage";

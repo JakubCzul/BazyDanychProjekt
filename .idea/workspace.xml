@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/InternshipPostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/PracticePostRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipOffersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticeOffersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/LogInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/internshipOffers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/practiceOffers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registrationPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +70,7 @@
     "Spring Boot.StronaStazowaApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/p.bistyga/Documents/GitHub/BazyDanychProjekt",
+    "last_opened_file_path": "C:/Users/kubac/Documents/GitHub/Qt/Kolos/BazyDanychProjekt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,8 +106,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="jdk-17.0.9-jbr-17.0.9-4caba194b151-51f1b679" />
       </set>
     </attachedChunks>
   </component>
@@ -140,6 +132,7 @@
       <workItem from="1719390054962" duration="16000" />
       <workItem from="1719390294660" duration="3124000" />
       <workItem from="1724316624217" duration="1352000" />
+      <workItem from="1725955299090" duration="1063000" />
     </task>
     <servers />
   </component>
