@@ -32,23 +32,4 @@ public class InternshipPostsController {
         return "internshipPosts";
     }
 
-    @PostMapping("/add")
-    public String addInternshipPost(@RequestParam String title,
-                                    @RequestParam String adress,
-                                    @RequestParam String description,
-                                    @RequestParam String duration,
-                                    @RequestParam Integer salary,
-                                    @RequestParam String technologies,
-                                    Principal principal) {
-        InternshipPost post = new InternshipPost();
-        post.setTitle(title);
-        post.setAdress(adress);
-        post.setDescription(description);
-        post.setDuration(Timestamp.valueOf(duration));
-        post.setSalary(salary);
-        post.setTechnologies(technologies);
-
-        internshipPostRepository.save(post);
-        return "redirect:/internshipPosts";
-    }
 }

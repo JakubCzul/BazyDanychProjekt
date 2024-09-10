@@ -32,23 +32,4 @@ public class PracticePostsController {
         return "practicePosts";
     }
 
-    @PostMapping("/add")
-    public String addPracticePost(@RequestParam String title,
-                                  @RequestParam String adress,
-                                  @RequestParam String description,
-                                  @RequestParam String duration,
-                                  @RequestParam Integer salary,
-                                  @RequestParam String technologies,
-                                  Principal principal) {
-        PracticePost post = new PracticePost();
-        post.setTitle(title);
-        post.setAdress(adress);
-        post.setDescription(description);
-        post.setDuration(Timestamp.valueOf(duration));
-        post.setSalary(salary);
-        post.setTechnologies(technologies);
-
-        practicePostRepository.save(post);
-        return "redirect:/practicePosts";
-    }
 }

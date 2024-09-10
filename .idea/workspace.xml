@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

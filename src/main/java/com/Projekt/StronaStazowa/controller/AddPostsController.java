@@ -41,16 +41,15 @@ public class AddPostsController {
                                     @RequestParam Integer salary,
                                     @RequestParam String technologies,
                                     Principal principal) {
-        InternshipPost internshipPost = new InternshipPost();
-        internshipPost.setTitle(title);
-        internshipPost.setAdress(adress);
-        internshipPost.setDescription(description);
-        internshipPost.setDuration(Timestamp.valueOf(duration));
-        internshipPost.setSalary(salary);
-        internshipPost.setTechnologies(technologies);
+        InternshipPost post = new InternshipPost();
+        post.setTitle(title);
+        post.setAdress(adress);
+        post.setDescription(description);
+        post.setDuration(Timestamp.valueOf(duration));
+        post.setSalary(salary);
+        post.setTechnologies(technologies);
 
-        internshipPostRepository.save(internshipPost);
-
+        internshipPostRepository.save(post);
         return "redirect:/internshipPosts";
     }
 
@@ -62,16 +61,15 @@ public class AddPostsController {
                                   @RequestParam Integer salary,
                                   @RequestParam String technologies,
                                   Principal principal) {
-        PracticePost practicePost = new PracticePost();
-        practicePost.setTitle(title);
-        practicePost.setAdress(adress);
-        practicePost.setDescription(description);
-        practicePost.setDuration(Timestamp.valueOf(duration));
-        practicePost.setSalary(salary);
-        practicePost.setTechnologies(technologies);
+        PracticePost post = new PracticePost();
+        post.setTitle(title);
+        post.setAdress(adress);
+        post.setDescription(description);
+        post.setDuration(Timestamp.valueOf(duration));
+        post.setSalary(salary);
+        post.setTechnologies(technologies);
 
-        practicePostRepository.save(practicePost);
-
+        practicePostRepository.save(post);
         return "redirect:/practicePosts";
     }
 }
