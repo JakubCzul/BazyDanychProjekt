@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/addPosts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/InternshipPostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/InternshipPostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/PracticePostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/repository/PracticePostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -59,41 +52,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Maven.StronaStazowa [clean].executor": "Run",
-    "Maven.StronaStazowa [compile].executor": "Run",
-    "Maven.StronaStazowa [test].executor": "Run",
-    "Maven.StronaStazowa [validate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.StronaStazowaApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/kubac/Documents/GitHub/Qt/Kolos/BazyDanychProjekt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.StronaStazowa [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StronaStazowa [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StronaStazowa [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.StronaStazowa [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.StronaStazowaApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kubac/Documents/GitHub/Qt/Kolos/BazyDanychProjekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\macie\Desktop\StronaStazowa\src\main\resources\templates" />
@@ -139,6 +132,7 @@
       <workItem from="1719390294660" duration="3124000" />
       <workItem from="1724316624217" duration="1352000" />
       <workItem from="1725955299090" duration="3200000" />
+      <workItem from="1725959253124" duration="673000" />
     </task>
     <servers />
   </component>

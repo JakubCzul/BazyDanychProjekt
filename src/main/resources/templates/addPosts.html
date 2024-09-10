@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj nową ofertę</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+        function toggleForm() {
+            const offerType = document.querySelector('input[name="offerType"]:checked').value;
+            const internshipForm = document.getElementById("internshipForm");
+            const practiceForm = document.getElementById("practiceForm");
+
+            if (offerType === "internship") {
+                internshipForm.style.display = "block";
+                practiceForm.style.display = "none";
+            } else {
+                internshipForm.style.display = "none";
+                practiceForm.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Dodaj nową ofertę</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Strona główna</a></li>
+            <li><a href="/internshipPosts">Oferty staży</a></li>
+            <li><a href="/practicePosts">Oferty praktyk</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="offer-selection">
+    <h2>Wybierz rodzaj oferty, którą chcesz dodać:</h2>
+    <label>
+        <input type="radio" name="offerType" value="internship" onclick="toggleForm()" checked> Staż
+    </label>
+    <label>
+        <input type="radio" name="offerType" value="practice" onclick="toggleForm()"> Praktyka
+    </label>
+</section>
+
+<section id="form-section">
+    <div id="internshipForm" style="display: block;">
+        <h2>Dodaj ofertę stażu:</h2>
+        <form action="/internshipPosts/add" method="post">
+            <label for="internshipTitle">Tytuł:</label>
+            <input type="text" id="internshipTitle" name="title" required><br><br>
+
+            <label for="internshipAdress">Adres:</label>
+            <input type="text" id="internshipAdress" name="adress" required><br><br>
+
+            <label for="internshipDescription">Opis:</label>
+            <textarea id="internshipDescription" name="description" required></textarea><br><br>
+
+            <label for="internshipDuration">Czas trwania (yyyy-mm-dd hh:mm:ss):</label>
+            <input type="text" id="internshipDuration" name="duration" required><br><br>
+
+            <label for="internshipSalary">Wynagrodzenie (PLN):</label>
+            <input type="number" id="internshipSalary" name="salary" required><br><br>
+
+            <label for="internshipTechnologies">Technologie:</label>
+            <input type="text" id="internshipTechnologies" name="technologies" required><br><br>
+
+            <button type="submit">Dodaj ofertę stażu</button>
+        </form>
+    </div>
+
+    <div id="practiceForm" style="display: none;">
+        <h2>Dodaj ofertę praktyki:</h2>
+        <form action="/practicePosts/add" method="post">
+            <label for="practiceTitle">Tytuł:</label>
+            <input type="text" id="practiceTitle" name="title" required><br><br>
+
+            <label for="practiceAdress">Adres:</label>
+            <input type="text" id="practiceAdress" name="adress" required><br><br>
+
+            <label for="practiceDescription">Opis:</label>
+            <textarea id="practiceDescription" name="description" required></textarea><br><br>
+
+            <label for="practiceDuration">Czas trwania (yyyy-mm-dd hh:mm:ss):</label>
+            <input type="text" id="practiceDuration" name="duration" required><br><br>
+
+            <label for="practiceSalary">Wynagrodzenie (PLN):</label>
+            <input type="number" id="practiceSalary" name="salary" required><br><br>
+
+            <label for="practiceTechnologies">Technologie:</label>
+            <input type="text" id="practiceTechnologies" name="technologies" required><br><br>
+
+            <button type="submit">Dodaj ofertę praktyki</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Platforma Staży i Praktyk</p>
+</footer>
+
+</body>
+</html>

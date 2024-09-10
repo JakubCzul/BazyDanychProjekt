@@ -44,7 +44,7 @@ public class InternshipPostsController {
         post.setTitle(title);
         post.setAdress(adress);
         post.setDescription(description);
-        post.setDuration(Timestamp.valueOf(duration)); // Upewnij się, że format pasuje do TIMESTAMP
+        post.setDuration(Timestamp.valueOf(duration));
         post.setSalary(salary);
         post.setTechnologies(technologies);
 

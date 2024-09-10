@@ -33,7 +33,6 @@ public class MainController {
         model.addAttribute("internshipPosts", internshipPosts);
         model.addAttribute("practicePosts", practicePosts);
 
-        // Przekieruj do strony głównej
         return "mainPage";
     }
 }
