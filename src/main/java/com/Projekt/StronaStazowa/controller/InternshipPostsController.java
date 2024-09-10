@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
+import java.sql.Timestamp;
 import java.util.List;
 
 @Controller
@@ -20,7 +21,7 @@ public class InternshipPostsController {
     @Autowired
     private InternshipPostRepository internshipPostRepository;
 
-    InternshipPostsController(InternshipPostRepository internshipPostRepository){
+    public InternshipPostsController(InternshipPostRepository internshipPostRepository) {
         this.internshipPostRepository = internshipPostRepository;
     }
 
@@ -32,11 +33,20 @@ public class InternshipPostsController {
     }
 
     @PostMapping("/add")
-    public String addInternshipPost(@RequestParam String title, @RequestParam String content, Principal principal) {
+    public String addInternshipPost(@RequestParam String title,
+                                    @RequestParam String adress,
+                                    @RequestParam String description,
+                                    @RequestParam String duration,
+                                    @RequestParam Integer salary,
+                                    @RequestParam String technologies,
+                                    Principal principal) {
         InternshipPost post = new InternshipPost();
         post.setTitle(title);
-        post.setContent(content);
-        post.setAuthor(principal.getName());
+        post.setAdress(adress);
+        post.setDescription(description);
+        post.setDuration(Timestamp.valueOf(duration)); // Upewnij się, że format pasuje do TIMESTAMP
+        post.setSalary(salary);
+        post.setTechnologies(technologies);
 
         internshipPostRepository.save(post);
         return "redirect:/internshipPosts";

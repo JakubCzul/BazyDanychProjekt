@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
+import java.sql.Timestamp;
 import java.util.List;
 
 @Controller
@@ -32,11 +33,20 @@ public class PracticePostsController {
     }
 
     @PostMapping("/add")
-    public String addPracticePost(@RequestParam String title, @RequestParam String content, Principal principal) {
+    public String addPracticePost(@RequestParam String title,
+                                  @RequestParam String adress,
+                                  @RequestParam String description,
+                                  @RequestParam String duration,
+                                  @RequestParam Integer salary,
+                                  @RequestParam String technologies,
+                                  Principal principal) {
         PracticePost post = new PracticePost();
         post.setTitle(title);
-        post.setContent(content);
-        post.setAuthor(principal.getName());
+        post.setAdress(adress);
+        post.setDescription(description);
+        post.setDuration(Timestamp.valueOf(duration));
+        post.setSalary(salary);
+        post.setTechnologies(technologies);
 
         practicePostRepository.save(post);
         return "redirect:/practicePosts";
