@@ -32,4 +32,7 @@ public class InternshipPost {
 
     @Column(length = 100)
     private String city;
+
+    @Column(length = 100)
+    private String email;
 }

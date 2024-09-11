@@ -40,6 +40,7 @@ public class AddPostsController {
                                     @RequestParam String duration,
                                     @RequestParam Integer salary,
                                     @RequestParam String technologies,
+                                    @RequestParam String email, // Dodane pole email
                                     Principal principal) {
         InternshipPost post = new InternshipPost();
         post.setTitle(title);
@@ -48,6 +49,7 @@ public class AddPostsController {
         post.setDuration(Timestamp.valueOf(duration));
         post.setSalary(salary);
         post.setTechnologies(technologies);
+        post.setEmail(email); // Ustawienie emailu
 
         internshipPostRepository.save(post);
         return "redirect:/internshipPosts";
@@ -60,6 +62,7 @@ public class AddPostsController {
                                   @RequestParam String duration,
                                   @RequestParam Integer salary,
                                   @RequestParam String technologies,
+                                  @RequestParam String email, // Dodane pole email
                                   Principal principal) {
         PracticePost post = new PracticePost();
         post.setTitle(title);
@@ -68,6 +71,7 @@ public class AddPostsController {
         post.setDuration(Timestamp.valueOf(duration));
         post.setSalary(salary);
         post.setTechnologies(technologies);
+        post.setEmail(email); // Ustawienie emailu
 
         practicePostRepository.save(post);
         return "redirect:/practicePosts";

@@ -50,7 +50,6 @@
     </form>
 </section>
 
-
 <section id="featured-offers">
     <h2>Najnowsze oferty:</h2>
 
@@ -61,6 +60,7 @@
             <p th:text="${internshipPost.description}">Opis Stażu</p>
             <p><strong>Adres:</strong> <span th:text="${internshipPost.adress}">Adres Stażu</span></p>
             <p><strong>Technologie:</strong> <span th:text="${internshipPost.technologies}">Technologie Stażu</span></p>
+            <p><strong>Kontakt:</strong> <a th:href="'mailto:' + ${internshipPost.email}" th:text="${internshipPost.email}">email@example.com</a></p>
         </li>
     </ul>
 
@@ -71,6 +71,7 @@
             <p th:text="${practicePost.description}">Opis Praktyki</p>
             <p><strong>Adres:</strong> <span th:text="${practicePost.adress}">Adres Praktyki</span></p>
             <p><strong>Technologie:</strong> <span th:text="${practicePost.technologies}">Technologie Praktyki</span></p>
+            <p><strong>Kontakt:</strong> <a th:href="'mailto:' + ${practicePost.email}" th:text="${practicePost.email}">email@example.com</a></p>
         </li>
     </ul>
 </section>
