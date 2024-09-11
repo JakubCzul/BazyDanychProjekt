@@ -72,3 +72,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.offer-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-item h4 {
+    margin-bottom: 10px;
+}
+
+.offer-item p {
+    margin-bottom: 5px;
+}
+

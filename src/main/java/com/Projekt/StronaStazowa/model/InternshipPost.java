@@ -29,4 +29,7 @@ public class InternshipPost {
 
     @Column(length = 255)
     private String technologies;
+
+    @Column(length = 100)
+    private String city;
 }

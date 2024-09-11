@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/InternshipPostsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/PracticePostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/internshipPosts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/practicePosts.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +137,7 @@
       <workItem from="1725955299090" duration="3200000" />
       <workItem from="1725959253124" duration="673000" />
       <workItem from="1725960195375" duration="137000" />
+      <workItem from="1726039359316" duration="1226000" />
     </task>
     <servers />
   </component>

@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 public class MainController {
@@ -26,12 +28,39 @@ public class MainController {
     }
 
     @GetMapping("/")
-    public String mainPage(Model model) {
+    public String mainPage(
+            @RequestParam(value = "city", required = false) String city,
+            @RequestParam(value = "language", required = false) String language,
+            Model model) {
+
         List<InternshipPost> internshipPosts = internshipPostRepository.findAll();
         List<PracticePost> practicePosts = practicePostRepository.findAll();
 
+        if (city != null && !city.isEmpty()) {
+            internshipPosts = internshipPosts.stream()
+                    .filter(post -> city.equals(post.getCity()))
+                    .collect(Collectors.toList());
+
+            practicePosts = practicePosts.stream()
+                    .filter(post -> city.equals(post.getCity()))
+                    .collect(Collectors.toList());
+        }
+
+        if (language != null && !language.isEmpty()) {
+            internshipPosts = internshipPosts.stream()
+                    .filter(post -> post.getTechnologies().contains(language))
+                    .collect(Collectors.toList());
+
+            practicePosts = practicePosts.stream()
+                    .filter(post -> post.getTechnologies().contains(language))
+                    .collect(Collectors.toList());
+        }
+
         model.addAttribute("internshipPosts", internshipPosts);
         model.addAttribute("practicePosts", practicePosts);
+
+        model.addAttribute("cities", List.of("Gliwice", "Kraków", "Katowice", "Wrocław", "Warszawa"));
+        model.addAttribute("languages", List.of("Java", "Python", "JavaScript", "C#", "C++"));
 
         return "mainPage";
     }

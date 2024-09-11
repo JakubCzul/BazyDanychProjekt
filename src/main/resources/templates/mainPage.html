@@ -33,11 +33,23 @@
 
 <section id="search">
     <h2>Wyszukaj oferty:</h2>
-    <form>
+    <form method="get" action="/">
         <input type="text" name="search" placeholder="Wpisz frazę...">
+
+        <select name="city">
+            <option value="">Wybierz miasto</option>
+            <option th:each="city : ${cities}" th:value="${city}" th:text="${city}"></option>
+        </select>
+
+        <select name="language">
+            <option value="">Wybierz technologie</option>
+            <option th:each="language : ${languages}" th:value="${language}" th:text="${language}"></option>
+        </select>
+
         <button type="submit">Szukaj</button>
     </form>
 </section>
+
 
 <section id="featured-offers">
     <h2>Najnowsze oferty:</h2>
