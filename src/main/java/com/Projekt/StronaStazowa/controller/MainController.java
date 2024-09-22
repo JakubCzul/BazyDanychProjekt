@@ -38,11 +38,11 @@ public class MainController {
 
         if (city != null && !city.isEmpty()) {
             internshipPosts = internshipPosts.stream()
-                    .filter(post -> city.equals(post.getAdress())) // Upewnij się, że 'adress' odpowiada polu miasta
+                    .filter(post -> city.equals(post.getAdress()))
                     .collect(Collectors.toList());
 
             practicePosts = practicePosts.stream()
-                    .filter(post -> city.equals(post.getAdress())) // Upewnij się, że 'adress' odpowiada polu miasta
+                    .filter(post -> city.equals(post.getAdress()))
                     .collect(Collectors.toList());
         }
 

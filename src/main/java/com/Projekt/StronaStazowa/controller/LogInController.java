@@ -42,21 +42,19 @@ public class LogInController {
                             Model model,
                             HttpSession session) {
 
-        // Sprawdzanie czy użytkownik to intern
+
         Intern intern = internRepository.findByEmail(email);
         if (intern != null && intern.getPassword().equals(doHashing(password))) {
-            session.setAttribute("user", intern); // Zapisanie użytkownika do sesji
-            return "redirect:/"; // Przekierowanie do strony ofert staży
+            session.setAttribute("user", intern);
+            return "redirect:/";
         }
 
-        // Sprawdzanie czy użytkownik to firma
         Company company = companyRepository.findByEmail(email);
         if (company != null && company.getPassword().equals(doHashing(password))) {
-            session.setAttribute("user", company); // Zapisanie użytkownika do sesji
-            return "redirect:/"; // Przekierowanie do strony ofert firmy
+            session.setAttribute("user", company);
+            return "redirect:/";
         }
 
-        // Jeśli logowanie nie powiodło się, przekierowanie z powrotem do strony logowania z komunikatem
         model.addAttribute("error", true);
         return "loginPage";
     }

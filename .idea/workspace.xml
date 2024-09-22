@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d61dc3e-d02f-41f0-bc77-957735f5b556" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/AddPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/LogInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/LogInController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/InternshipPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Projekt/StronaStazowa/model/PracticePost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addPosts.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addPosts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/mainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +134,7 @@
       <workItem from="1725959253124" duration="673000" />
       <workItem from="1725960195375" duration="137000" />
       <workItem from="1726039359316" duration="2605000" />
+      <workItem from="1726858312835" duration="1225000" />
     </task>
     <servers />
   </component>
